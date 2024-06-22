@@ -106,7 +106,10 @@ video {
 	font-size: 100%;
 	font-family: 'MangoGrotesque';
 	vertical-align: baseline;
+}
 
+p {
+	font-family: 'InterTight';
 }
 
 /* HTML5 display-role reset for older browsers */
