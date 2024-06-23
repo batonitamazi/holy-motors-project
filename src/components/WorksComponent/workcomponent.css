@@ -1,0 +1,97 @@
+.image--display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.image-big {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    transition: all 1.5s;
+}
+
+.black {
+    background-color: #000000;
+}
+
+.black-text {
+    color: #000000;
+}
+
+.description-work {
+    font-size: 1.2em;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 70%;
+}
+
+.work-action-buttons {
+    width: 80%;
+    top: 12%;
+    right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.work-nav-buttons {
+    width: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-work {
+    position: absolute;
+    right: 5%;
+    top: 78%;
+    background-color: #FF0000;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 5.2em;
+    font-weight: bold;
+    text-align: left;
+    max-width: 410px;
+    overflow-wrap: break-word;
+}
+
+.nav-buttons-black {
+    background: #000000;
+    color: white;
+    font-size: 2em;
+    font-weight: 200;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-num-black {
+    color: #000000;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.screen-works {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20%;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: 270px;
+    top: 51%;
+    left: 14%;
+}

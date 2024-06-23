@@ -1,0 +1,47 @@
+.clients--section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients--container {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.clients--header {
+    font-size: 12em;
+}
+
+.client-logos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+.client-logos .logo-track {
+    display: flex;
+    animation: scroll 30s linear infinite;
+}
+
+.client-logos img {
+    margin: 0 20px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}

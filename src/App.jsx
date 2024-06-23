@@ -1,7 +1,9 @@
 import { Element } from 'react-scroll';
 import './App.css';
 import NavSection from './components/NavSection/NavSection';
-import ScrollableComponent from './components/ScrollableComponent/ScrollableComponent';
+import WorkComponent from './components/WorksComponent/WorkComponent';
+import ClientsSection from './components/ClientsSection/ClientsSection';
+import ProjectsComponent from './components/ProjectsComponent/ProjectsComponent';
 
 function App() {
 
@@ -38,6 +40,48 @@ function App() {
     }
   ];
 
+  const works_screens = [
+    {
+      id: 1,
+      title: 'CCLA - LAW CONSULTING AGENCY',
+      subtitle: 'City Mall is a shopping destination that brings people together from all walks of life.',
+      image: { src: 'assets/works/slide-01.png', alt: 'city mall' },
+      description: [
+        'To help visitors find precisely what they are looking for, we doubled down on multiple arrows in the original symbol, updated and expanded them into a navigation-friendly design system.',
+        'Typography also got a bold upgrade integrating a custom Georgian adaptation of Pangram typeface.'
+      ],
+      style: { backgroundColor: '#fff' }
+    },
+    {
+      id: 2,
+      title: 'BLAUENSTEIN FARM',
+      subtitle: 'Out of nothing, a new source of wealth - Neyco shines through.',
+      image: { src: 'assets/works/slide-02.png', alt: 'Neyco' },
+      description: [
+        'Whether it’s trading cryptocurrencies or pawning your bitcoin wallets to get fastaccess to cash.',
+        "Inspired by the eternal Creation of Adam our photo series for Neyco website tries to reframe the struggle between old and new forces, and help the viewers reimagine brand new source of wealth."
+      ],
+    },
+    {
+      id: 3,
+      title: 'KIND & NOBLE',
+      subtitle: 'Out of nothing, if you get tired chewing on your daily fruits and veggies, you can now drink them.',
+      image: { src: 'assets/works/slide-03.png', alt: 'KIND & NOBLE' },
+      description: [
+        "«Kind and Noble» or [ke-ti-li da pa-ti-o-sa-ni] in our native Georgian language isn't just a name! This noble beverage is made exclusively by mixing fresh fruit and vegetable purees to bring mother nature's kindness to humans in the most convenient form."
+      ],
+    },
+    {
+      id: 4,
+      title: 'KIND & NOBLE',
+      subtitle: 'Out of nothing, if you get tired chewing on your daily fruits and veggies, you can now drink them.',
+      image: { src: 'assets/works/slide-04.png', alt: 'KIND & NOBLE' },
+      description: [
+        "«Kind and Noble» or [ke-ti-li da pa-ti-o-sa-ni] in our native Georgian language isn't just a name! This noble beverage is made exclusively by mixing fresh fruit and vegetable purees to bring mother nature's kindness to humans in the most convenient form."
+      ],
+    }
+  ];
+
 
   return (
     <>
@@ -45,16 +89,13 @@ function App() {
         <NavSection />
       </Element>
       <Element name="section2">
-        <ScrollableComponent screens={project_screens} />
+        <ProjectsComponent screens={project_screens} />
       </Element>
       <Element name="section3">
-        <ScrollableComponent screens={project_screens} />
+        <WorkComponent screens={works_screens} />
       </Element>
       <Element name="section4">
-        <section style={{ height: '100vh', margin: 0, padding: 0, backgroundColor: '#000000' }}>
-          <h1>Section 4</h1>
-          <p>This is the content of section 2</p>
-        </section>
+        <ClientsSection />
       </Element>
       <Element name="section5">
         <section style={{ height: '100vh', margin: 0, padding: 0, backgroundColor: 'lightblue' }}>

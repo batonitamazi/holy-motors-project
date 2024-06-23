@@ -1,0 +1,137 @@
+.scrollable-component {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: "all .2s",
+
+}
+
+.screen {
+    height: 86%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20%;
+    align-items: flex-start;
+
+}
+
+.header {
+    font-size: 2.4em;
+    font-weight: 600;
+    height: 40%;
+}
+
+.description {
+    font-size: 2.2em;
+    font-weight: 200;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+.desc {
+    padding-top: 30px;
+
+}
+
+.image-display {
+    padding: 50px;
+    height: 86%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    width: 100%;
+}
+
+.image {
+    height: 100%;
+    object-fit: contain;
+    transition: all 1.5s;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 38%;
+    position: absolute;
+    top: 85.5%;
+    right: 53%;
+    z-index: 1;
+}
+
+.nav-buttons {
+    width: 26%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-button {
+    background: #FF0000;
+    color: white;
+    font-size: 2em;
+    font-weight: 200;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    position: absolute;
+    top: 81%;
+    right: 6.5%;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #000;
+    font-size: 6em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.slide-num {
+    color: #FF0000;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.dots {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    width: 80%;
+    gap: 5px;
+}
+
+.dot {
+    height: 5px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: #FF0000;
+}
+
+.active-dot {
+    background-color: #FF0000;
+}
