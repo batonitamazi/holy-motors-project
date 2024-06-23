@@ -4,6 +4,7 @@ import NavSection from './components/NavSection/NavSection';
 import WorkComponent from './components/WorksComponent/WorkComponent';
 import ClientsSection from './components/ClientsSection/ClientsSection';
 import ProjectsComponent from './components/ProjectsComponent/ProjectsComponent';
+import StorySection from './components/StorySection/StorySection';
 
 function App() {
 
@@ -98,10 +99,7 @@ function App() {
         <ClientsSection />
       </Element>
       <Element name="section5">
-        <section style={{ height: '100vh', margin: 0, padding: 0, backgroundColor: 'lightblue' }}>
-          <h1>Section 5</h1>
-          <p>This is the content of section 2</p>
-        </section>
+        <StorySection />
       </Element>
     </ >
   );

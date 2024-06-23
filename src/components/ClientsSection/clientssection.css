@@ -1,5 +1,4 @@
 .clients--section {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,6 +24,7 @@
     align-items: center;
     overflow: hidden;
     padding-top: 50px;
+    cursor: pointer;
 }
 
 .client-logos .logo-track {
