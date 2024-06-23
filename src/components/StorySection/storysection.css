@@ -1,0 +1,57 @@
+.story--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.info--container {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+    height: 60%;
+}
+
+.logos--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 30%;
+}
+
+.story--title {
+    font-size: 12em;
+    font-weight: bold;
+}
+
+.story--subtitle {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.story--desc {
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.desc--container {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10%;
+}
+
+.header--container {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
