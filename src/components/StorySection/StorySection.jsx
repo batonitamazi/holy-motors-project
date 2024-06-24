@@ -1,26 +1,23 @@
 import './storysection.css'
+import PropTypes from 'prop-types';
 
-function StorySection() {
+function StorySection({ storyData }) {
     return (
         <section className='story--section'>
             <div className='info--container'>
                 <div className='header--container'>
-                    <h1 className='story--title'>{'story'.toUpperCase()}</h1>
-                    <p className='story--desc'>On the first day of April, 3 years ago holistic design agency Holy Motors opened for business.</p>
+                    <h1 className='story--title'>{storyData.title.toUpperCase()}</h1>
+                    <p className='story--desc'>{storyData.story_description}</p>
                     <p className='story--subtitle'>
-                        Holy Motors is a holistic design agency helping brands leave their mark on
-                        culture.
+                        {storyData.subtitle}
                     </p>
                 </div>
                 <div className='desc--container'>
-                    <p className='story--desc'>
-                        With multidisciplinary teams of designers, developers, strategists, writers, creators, and artists, we work closely with founders and brand owners through all stages of bringing their vision to life.
-                    </p>
-                    <p className='story--desc'>
-                        As most glorious human endeavours often are, Holy Motors was created out of nothing when Georgia’s renowned creative duo Giorgi Avaliani and Nick Kumbari joined their forces to be reborn. Bringing together years of creative and design excellence.
-
-                    </p>
-
+                    {storyData.descriptions.map((item, itemIndex) => {
+                        return (
+                            <p className='story--desc' key={itemIndex}>{item}</p>
+                        )
+                    })}
                 </div>
             </div>
             <div className='logos--container'>
@@ -31,5 +28,11 @@ function StorySection() {
         </section>
     )
 }
+
+StorySection.propTypes = {
+    storyData: PropTypes.object.isRequired
+};
+
+
 
 export default StorySection

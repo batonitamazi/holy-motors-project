@@ -28,7 +28,7 @@ function ScrollableComponent({ screens, styles, renderSubtitle, isWork }) {
         }
     }, [currentIndex, screens, titleHeight]);
 
-    const titleStyle = isWork ? { top: `calc(77.9% - ${titleHeight - 111}px)` } : {};
+    const titleStyle = isWork ? { top: `calc(77.9% - ${titleHeight - 110}px)` } : {};
 
     return (
         <section style={styles.sectionStyle}>
