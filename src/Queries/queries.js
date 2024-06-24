@@ -35,7 +35,7 @@ export const GET_STORY = gql`
       title
       subtitle
       story_description
-      description
+      descriptions
     }
   }
 `;

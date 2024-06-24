@@ -1,7 +1,17 @@
 import './storysection.css'
-import PropTypes from 'prop-types';
+import { useQuery } from '@apollo/client';
+import { GET_STORY } from '../../Queries/queries'
 
-function StorySection({ storyData }) {
+function StorySection() {
+    const { loading, error, data } = useQuery(GET_STORY);
+
+    if (loading) return <p>Loading...</p>;
+    if (error) {
+        console.error('GraphQL error:', error);
+        return <p>Error: {error.message}</p>;
+    }
+    console.log(data)
+    const storyData = data?.story || {};
     return (
         <section className='story--section'>
             <div className='info--container'>
@@ -29,9 +39,7 @@ function StorySection({ storyData }) {
     )
 }
 
-StorySection.propTypes = {
-    storyData: PropTypes.object.isRequired
-};
+
 
 
 

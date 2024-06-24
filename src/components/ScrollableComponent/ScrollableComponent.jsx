@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useState, useEffect, useRef } from 'react';
 
 
-function ScrollableComponent({ screens, styles, renderSubtitle, isWork }) {
+function ScrollableComponent({ screens, styles, renderSubtitle = false, isWork = false, }) {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const titleRef = useRef(null);
@@ -84,10 +84,7 @@ ScrollableComponent.propTypes = {
     isWork: PropTypes.bool,
 };
 
-ScrollableComponent.defaultProps = {
-    renderSubtitle: false,
-    isWork: false,
-};
+
 
 
 

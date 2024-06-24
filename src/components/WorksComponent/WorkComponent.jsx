@@ -1,11 +1,18 @@
 import ScrollableComponent from '../ScrollableComponent/ScrollableComponent';
 import './workcomponent.css'
-import PropTypes from 'prop-types';
-// import { useState} from 'react';
+import { useQuery } from '@apollo/client';
+import { GET_WORK_SCREENS } from '../../Queries/queries';
 
+function WorkComponent() {
+    const { loading, error, data } = useQuery(GET_WORK_SCREENS);
 
-function WorkComponent({ screens }) {
+    if (loading) return <p>Loading...</p>;
+    if (error) {
+        console.error('GraphQL error:', error);
+        return <p>Error: {error.message}</p>;
+    }
 
+    const screens = data?.workScreens || [];  // Ensure screens is an array
 
     const workComponentStyles = {
         sectionStyle: { backgroundColor: '#FF0000', color: 'white' },
@@ -25,15 +32,11 @@ function WorkComponent({ screens }) {
         dotClass: 'dot',
         activeDotClass: 'active-dot'
     };
-
     return (
         <ScrollableComponent screens={screens} styles={workComponentStyles} isWork={true} />
     )
 }
 
-WorkComponent.propTypes = {
-    screens: PropTypes.array.isRequired
-};
 
 
 export default WorkComponent

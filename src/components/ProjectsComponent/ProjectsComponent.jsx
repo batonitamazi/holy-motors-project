@@ -1,8 +1,16 @@
 import ScrollableComponent from '../ScrollableComponent/ScrollableComponent';
 import './projectscomponent.css';
-import PropTypes from 'prop-types';
+import { useQuery } from '@apollo/client';
+import { GET_PROJECT_SCREENS } from '../../Queries/queries';
+function ProjectsComponent() {
+    const { loading, error, data } = useQuery(GET_PROJECT_SCREENS);
 
-function ProjectsComponent({ screens }) {
+    if (loading) return <p>Loading...</p>;
+    if (error) {
+        console.error('GraphQL error:', error);
+        return <p>Error: {error.message}</p>;
+    }
+    const screens = data?.projectScreens || [];
     const ProjectsComponentStyles = {
         sectionStyle: { backgroundColor: 'black', color: 'white' },
         componentClass: 'scrollable-component',
@@ -27,8 +35,5 @@ function ProjectsComponent({ screens }) {
     )
 }
 
-ProjectsComponent.propTypes = {
-    screens: PropTypes.array.isRequired
-};
 
 export default ProjectsComponent
