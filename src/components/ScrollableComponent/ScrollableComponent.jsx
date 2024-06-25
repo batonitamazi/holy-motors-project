@@ -58,7 +58,7 @@ function ScrollableComponent({ screens, styles, renderSubtitle = false, isWork =
                     </div>
                     <img src={currentScreen.image.src} alt={currentScreen.image.alt} className={styles.imageClass} />
                     <div className={styles.actionButtonsClass}>
-                        <div className={styles.slideNumClass}>0{currentScreen.id}</div>
+                        <div className={styles.slideNumClass}>0{currentIndex + 1}</div>
                         <div className={styles.navButtonsClass}>
                             <div className={styles.navButtonClass} onClick={handlePrevClick}>‹</div>
                             <div className={styles.navButtonClass} onClick={handleNextClick}>›</div>

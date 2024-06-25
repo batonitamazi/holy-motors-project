@@ -10,7 +10,6 @@ function StorySection() {
         console.error('GraphQL error:', error);
         return <p>Error: {error.message}</p>;
     }
-    console.log(data)
     const storyData = data?.story || {};
     return (
         <section className='story--section'>
