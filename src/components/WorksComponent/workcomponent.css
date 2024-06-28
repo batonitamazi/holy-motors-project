@@ -2,15 +2,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 85%;
+    width: 95%;
     position: relative;
+
 }
 
 .image-big {
-    width: 90%;
-    height: 90%;
-    object-fit: contain;
-    transition: all 1.5s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .black {
@@ -22,19 +23,21 @@
 }
 
 .description-work {
-    font-size: 1.2em;
+    font-size: clamp(16px, 2.5vw, 26px);
     font-weight: 200;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    width: 70%;
+    width: 80%;
+    line-height: 40px;
+
 }
 
 .work-action-buttons {
-    width: 80%;
-    top: 12%;
-    right: 10%;
+    width: 20%;
+    top: 10%;
+    left: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,24 +46,25 @@
 }
 
 .work-nav-buttons {
-    width: 6%;
+    width: 12%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 200px;
 }
 
 .title-work {
-    position: absolute;
-    right: 5%;
-    top: 78%;
     background-color: #FF0000;
-    padding-top: 10px;
-    padding-left: 10px;
-    font-size: 5em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: clamp(1rem, 5vw, 6rem);
     font-weight: bold;
     text-align: left;
-    max-width: 410px;
-    overflow-wrap: break-word;
+    line-height: 0.9;
+    margin-bottom: -15px;
 }
 
 .nav-buttons-black {
@@ -88,10 +92,57 @@
     justify-content: flex-end;
     gap: 20%;
     align-items: flex-start;
-    position: absolute;
     z-index: 1;
     width: 50%;
-    height: 270px;
-    top: 51%;
-    left: 14%;
+    position: absolute;
+    bottom: 30px;
+    left: 5%;
+}
+
+.action-title-container-work {
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    bottom: 0;
+    right: 0;
+}
+
+.image-display-work {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width : 1920px) {
+    .work-nav-buttons {
+        width: 13%;
+    }
+
+
+}
+
+
+@media (max-width : 1680px) {
+    .work-nav-buttons {
+        width: 15%;
+    }
+}
+
+@media (max-width : 1440px) {
+    .work-nav-buttons {
+        width: 17%;
+    }
+}
+
+@media (max-width : 1366px) {
+    .work-nav-buttons {
+        width: 19%;
+    }
 }

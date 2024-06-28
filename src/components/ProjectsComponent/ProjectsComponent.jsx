@@ -27,7 +27,9 @@ function ProjectsComponent() {
         titleClass: 'title',
         dotsClass: 'dots',
         dotClass: 'dot',
-        activeDotClass: 'active-dot'
+        activeDotClass: 'active-dot',
+        actionTitleContainer: 'action-title-container'
+
     };
 
     return (

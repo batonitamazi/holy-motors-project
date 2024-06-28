@@ -12,16 +12,16 @@ function WorkComponent() {
         return <p>Error: {error.message}</p>;
     }
 
-    const screens = data?.workScreens || [];  // Ensure screens is an array
+    const screens = data?.workScreens || [];
 
     const workComponentStyles = {
-        sectionStyle: { backgroundColor: '#FF0000', color: 'white' },
+        sectionStyle: { backgroundColor: '#FF0000', color: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center' },
         componentClass: 'image--display',
         screenClass: 'screen-works',
         headerClass: 'header',
         descriptionClass: 'description-work',
         descClass: 'desc',
-        imageDisplayClass: 'image--display',
+        imageDisplayClass: 'image-display-work',
         imageClass: 'image-big',
         actionButtonsClass: 'work-action-buttons',
         slideNumClass: 'slide-num-black',
@@ -30,7 +30,8 @@ function WorkComponent() {
         titleClass: 'title-work',
         dotsClass: 'dots',
         dotClass: 'dot',
-        activeDotClass: 'active-dot'
+        activeDotClass: 'active-dot',
+        actionTitleContainer: 'action-title-container-work'
     };
     return (
         <ScrollableComponent screens={screens} styles={workComponentStyles} isWork={true} />

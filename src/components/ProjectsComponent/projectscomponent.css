@@ -22,20 +22,19 @@
 }
 
 .header {
-    font-size: 2.4em;
+    font-size: clamp(12px, 2.5vw, 46px);
     font-weight: 600;
     height: 40%;
 }
 
 .description {
-    font-size: 2.2em;
+    font-size: clamp(22px, 2.5vw, 40px);
     font-weight: 200;
     height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-
 }
 
 .desc {
@@ -44,7 +43,7 @@
 }
 
 .image-display {
-    padding: 50px;
+    margin: 50px;
     height: 86%;
     position: relative;
     display: flex;
@@ -64,15 +63,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 38%;
+    width: 10%;
     position: absolute;
-    top: 85.5%;
-    right: 53%;
+    bottom: 0px;
+    height: 10%;
+    left: 30px;
     z-index: 1;
 }
 
 .nav-buttons {
-    width: 26%;
+    width: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,14 +94,15 @@
 
 .title {
     position: absolute;
-    top: 81%;
-    right: 6.5%;
-    padding-top: 10px;
-    padding-left: 10px;
+    bottom: 0;
+    right: 0;
+    padding-left: 20px;
+    padding-top: 40px;
     background-color: #000;
-    font-size: 6em;
+    font-size: clamp(1rem, 5vw, 8rem);
     font-weight: bold;
     text-align: right;
+    line-height: 0.5;
 }
 
 .slide-num {
@@ -112,9 +113,9 @@
 
 .dots {
     position: absolute;
-    top: 10%;
+    top: 5%;
     display: flex;
-    width: 80%;
+    width: 90%;
     gap: 5px;
 }
 
@@ -134,4 +135,75 @@
 
 .active-dot {
     background-color: #FF0000;
+}
+
+
+.action-title-container {
+    position: absolute;
+    width: 60%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width : 1920px) {
+    .nav-buttons {
+        width: 15%;
+    }
+
+    .action-title-container {
+        width: 50%;
+    }
+
+    .description {
+        line-height: 70px;
+    }
+}
+
+
+@media (max-width : 1680px) {
+    .nav-buttons {
+        width: 18%;
+    }
+
+    .action-title-container {
+        width: 60%;
+    }
+
+    .description {
+        line-height: 50px;
+    }
+}
+
+@media (max-width : 1440px) {
+    .nav-buttons {
+        width: 25%;
+    }
+}
+
+@media (max-width : 1366px) {
+
+
+    .nav-buttons {
+        width: 25%;
+    }
+
+}
+
+@media (max-width : 1280px) {
+    .nav-buttons {
+        width: 25%;
+    }
+
+    .title {
+        padding-top: 25px;
+        padding-left: 10px;
+    }
+
+    .description {
+        line-height: 35px;
+    }
 }
