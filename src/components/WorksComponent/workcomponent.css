@@ -50,7 +50,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 200px;
+    padding-right: 60px;
 }
 
 .title-work {
@@ -63,8 +63,10 @@
     font-size: clamp(1rem, 5vw, 6rem);
     font-weight: bold;
     text-align: left;
+    text-align-last: left;
     line-height: 0.9;
     margin-bottom: -15px;
+    max-width: 90.5%;
 }
 
 .nav-buttons-black {
@@ -123,7 +125,10 @@
 @media (max-width : 1920px) {
     .work-nav-buttons {
         width: 13%;
+        padding-right: 90px;
+
     }
+
 
 
 }
@@ -132,17 +137,20 @@
 @media (max-width : 1680px) {
     .work-nav-buttons {
         width: 15%;
+        padding-right: 80px;
     }
 }
 
 @media (max-width : 1440px) {
     .work-nav-buttons {
         width: 17%;
+        padding-right: 70px;
     }
 }
 
 @media (max-width : 1366px) {
     .work-nav-buttons {
-        width: 19%;
+        width: 18%;
+        padding-right: 60px;
     }
 }
