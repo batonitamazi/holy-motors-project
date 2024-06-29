@@ -29,6 +29,12 @@ function ClientsSection() {
                         <img src='assets/clients/client-04.svg' alt='company' />
                         <img src='assets/clients/client-05.svg' alt='company' />
                         <img src='assets/clients/client-06.svg' alt='company' />
+                        <img src='assets/clients/client-07.svg' alt='company' />
+                        <img src='assets/clients/client-08.svg' alt='company' />
+                        <img src='assets/clients/client-09.svg' alt='company' />
+                        <img src='assets/clients/client-10.svg' alt='company' />
+                        <img src='assets/clients/client-11.svg' alt='company' />
+                        <img src='assets/clients/client-12.svg' alt='company' />
                         <img src='assets/clients/client-01.svg' alt='company' />
                         <img src='assets/clients/client-02.svg' alt='company' />
                         <img src='assets/clients/client-03.svg' alt='company' />
@@ -50,6 +56,12 @@ function ClientsSection() {
                         <img src='assets/clients/client-11.svg' alt='company' />
                         <img src='assets/clients/client-12.svg' alt='company' />
                         <img src='assets/clients/client-01.svg' alt='company' />
+                        <img src='assets/clients/client-02.svg' alt='company' />
+                        <img src='assets/clients/client-03.svg' alt='company' />
+                        <img src='assets/clients/client-04.svg' alt='company' />
+                        <img src='assets/clients/client-05.svg' alt='company' />
+                        <img src='assets/clients/client-06.svg' alt='company' />
+                        <img src='assets/clients/client-07.svg' alt='company' />
                         <img src='assets/clients/client-08.svg' alt='company' />
                         <img src='assets/clients/client-09.svg' alt='company' />
                         <img src='assets/clients/client-10.svg' alt='company' />

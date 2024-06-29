@@ -18,6 +18,7 @@
     width: 70%;
     height: 60%;
     align-items: start;
+    padding-top: max(0, 50px);
 }
 
 .logos--container {
@@ -30,29 +31,29 @@
 }
 
 .story--title {
-    font-size: 12em;
+    font-size: clamp(48px, 8vw, 120px);
     font-weight: bold;
 }
 
 .story--subtitle {
     padding-top: 20px;
-    font-size: 2.5em;
+    font-size: clamp(24px, 3vw, 40px);
     font-weight: 600;
-    line-height: 40px;
+    line-height: 1.2;
 }
 
 .story--desc {
-    font-size: 18px;
+    font-size: clamp(16px, 1.5vw, 24px);
     font-weight: 200;
     letter-spacing: 2px;
-    line-height: 30px;
+    line-height: 1.67;
 }
 
 .desc--container {
     display: grid;
     grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
     gap: 10%;
-    width: 60%;
+    width: 80%;
 }
 
 .header--container {

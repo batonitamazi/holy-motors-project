@@ -23,22 +23,45 @@
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding-top: 50px;
+    padding: 30px 0px;
     cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+
+}
+
+.client-logos:before,
+.client-logos:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+}
+
+.client-logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(32, 30, 30, 0.4));
+}
+
+.client-logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(32, 30, 30, 0.4));
 }
 
 .client-logos .logo-track {
     display: flex;
-    animation: scroll 20s linear infinite;
+    animation: scroll 10s linear infinite;
 }
 
 .client-logos img {
-    margin: 0 45px;
+    margin: 0 20px;
 }
 
 @keyframes scroll {
     from {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 
     to {
